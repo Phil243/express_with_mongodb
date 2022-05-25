@@ -1,6 +1,15 @@
 import Student from "../models/Student.js";
 
-export const getAllStudents = (req, res) => {};
+export const getAllStudents = async (req, res) => {
+    try{
+        const allStudents = await Student.find();
+        res.status(200).json({
+            students: allStudents
+        });
+    } catch (error) {
+        res.status(500).json(error);
+    }
+};
 
 export const getSingleStudent = (req, res) => {};
 
