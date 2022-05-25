@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4"
+  },
+  "name": "express_with_mongodb",
+  "description": "express mongodb mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phil243/express_with_mongodb.git"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose"
+  ],
+  "author": "Philipp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phil243/express_with_mongodb/issues"
+  },
+  "homepage": "https://github.com/Phil243/express_with_mongodb#readme"
+}
