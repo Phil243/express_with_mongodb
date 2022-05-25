@@ -25,4 +25,17 @@ export const createNewStudent = async (req, res) => {
 
 export const deleteStudent = (req, res) => {};
 
-export const updateStudent = (req, res) => {};
+export const updateStudent = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { name, first_name, email } = req.body;
+        const modifiedStudent = await Student.findByIdAndUpdate(
+            id,
+            { name, first_name, email },
+            {new: true}
+        );
+        res.status(200).json(modifiedStudent);
+    } catch (error) {
+        res.status(500).json(error);
+    }
+};
