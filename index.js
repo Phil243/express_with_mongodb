@@ -1,4 +1,5 @@
 import "dotenv/config.js"
+import "./database/client.js";
 import express from "express";
 import studentsRouter from "./routes/studentsRouter.js";
 
