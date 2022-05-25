@@ -2,9 +2,9 @@ import { Router } from "express";
 import {
   createNewStudent,
   deleteStudent,
-  getAllStudent,
-  getSingleUseStudent,
-  updateUserStudent,
+  getAllStudents,
+  getSingleStudent,
+  updateStudent,
 } from "../controllers/studentsController.js";
 
 const studentsRouter = Router();
